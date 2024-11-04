@@ -1,3 +1,5 @@
+// I - comments, comments, variables & data types
+
 // console.log(`Hello from main.js!`);
 
 // console.log('Bonjour!');
@@ -16,21 +18,52 @@
 
 // and that's it for the primary primitive data types (i.e. something that has an actual value, eg. 'shubham', the age 21, etc.)
 
+// let canVote = true // booleans
+// let canDrive = false
+
 // NON PRIMITIVE TYPES (objects) - looks like a python dictionary!
 // a collection of values!
 
-const person = {
-    'firstName': 'Bruce',
-    'lastName': 'Wayne',
-    'age': 30
-}
+// const person = {
+//     'firstName': 'Bruce',
+//     'lastName': 'Wayne',
+//     'age': 30
+// }
 
 // console.log(typeof(person)); // type is 'object'
 
 // console.log(person.lastName);
 
 // arrays // fun fact - in JS arrays are also objects!
-const oddNumbers = [1, 3, 5, 7, 9];
-console.log(oddNumbers[0]);
+// const oddNumbers = [1, 3, 5, 7, 9];
+// console.log(oddNumbers[0]);
 
 // console.log(typeof(oddNumbers))
+
+// II - OPERATORS:
+
+let x = 10 // assignment
+let y = 3
+
+// also the semi colon - ; - isn't really necessary :D
+console.log(x % y) // all the basic arithmetic ones apply here
+console.log(++x) // pre increment; x = 11
+console.log(y++) // post increment; y = 3
+console.log(y) // y = 4
+
+console.log(x >= y) // comparison operators
+
+// logical operations, just and and or --> && or || 
+const isValidNumber = x > 20 || 8 > y
+console.log(isValidNumber)
+
+const isValid = false
+console.log(!isValid) // negation
+
+// str operations
+console.log('Bruce ' + 'Wayne');
+
+// ternary
+// const isEven = 10 % 2 === 0 ? true : false // variant one
+const isEven = 10 % 2 === 0 ? 'Number is Even!' : 'Number is Odd!' // it doesn't have to be a boolean, it's a simple conditional!
+console.log(isEven)
