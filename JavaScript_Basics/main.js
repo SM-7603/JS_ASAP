@@ -84,17 +84,25 @@
 // // finally - undefined
 // console.log(5 - undefined) // NaN
 
-// Explicit types
-console.log(Number('5')) // gives 5
-console.log(Number('')) // gives 0, same for booleans, true = 1, false = 0
+// // Explicit types
+// console.log(Number('5')) // gives 5
+// console.log(Number('')) // gives 0, same for booleans, true = 1, false = 0
 
-// Then, we also have the parseInt / parseFloat, etc.
-console.log(parseFloat('3.14'))
+// // Then, we also have the parseInt / parseFloat, etc.
+// console.log(parseFloat('3.14'))
 
-// then the 'global' string method
-console.log(String(null))
-// there's also the toString method!
-console.log((500).toString()) // note - it won't work on null & undefined
+// // then the 'global' string method
+// console.log(String(null))
+// // there's also the toString method!
+// console.log((500).toString()) // note - it won't work on null & undefined
 
-// then there's the global boolean method
-console.log(Boolean('')) // null, undefined, 0, '', and NaN == false, everything else is true; but ' ' - str with a space gives true for some reason lol
+// // then there's the global boolean method
+// console.log(Boolean('')) // null, undefined, 0, '', and NaN == false, everything else is true; but ' ' - str with a space gives true for some reason lol
+
+// Equality
+const var1 = 10
+const var2 = '10'
+
+console.log(var1 == var2)
+console.log(var1 === var2) // doesn't convert implicitly before conversion (no strange coercion)
+// it's better to go with the strict comparison, since there's some strange JS behavior when dealing with '', null, undefined, etc.
