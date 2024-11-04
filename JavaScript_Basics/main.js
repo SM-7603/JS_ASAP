@@ -147,32 +147,57 @@
 //     console.log(`${num}`)
 // }
 
-// Functions!!!
-// NOTE - the actual value that we pass to a f(x) is the argument
-// and the thing in the function definition is the parameter
-// it's always good to have that clear!
+// // Functions!!!
+// // NOTE - the actual value that we pass to a f(x) is the argument
+// // and the thing in the function definition is the parameter
+// // it's always good to have that clear!
 
-function greetUser(name) {
-    console.log(`Hello ${name}!`)
+// function greetUser(name) {
+//     console.log(`Hello ${name}!`)
+// }
+
+// // greetUser('Shubham')
+// // greetUser('Bruce')
+// // greetUser('Diana')
+// // greetUser('Tony')
+
+// function addNumbers(a, b) {
+//     return a + b
+// }
+
+// // arrow functions, new syntax for functions (more concise), it was introduced in 2015
+// const arrowSum = (a, b) => {
+//     return a + b
+// }
+
+// // also like our example, if there's just a single line of code / statement
+
+// // const arrowSum = (a, b) => a + b // this also works
+
+// const sum = arrowSum(10, 20)
+// console.log(sum)
+
+// SCOPE!!!
+// types - block, f(x) & global
+
+// Also, note that myName - the same variable exists in different scopes, hence nothing is really affected!
+
+myNum = 10 // example of global scope - this will work everywhere
+myName = 'Riddler' // global scoped variable won't override the block / function scoped variables
+
+// block scope!
+if (true) {
+    const myName = 'Batman';
+    console.log(myName) // this will work
+    console.log(myNum)
 }
+// console.log(myAge) // this won't work
 
-// greetUser('Shubham')
-// greetUser('Bruce')
-// greetUser('Diana')
-// greetUser('Tony')
-
-function addNumbers(a, b) {
-    return a + b
+// function scope:
+function testFx() {
+    const myName = 'Bruce'
+    console.log(myName) // this will work
+    console.log(myNum)
 }
-
-// arrow functions, new syntax for functions (more concise), it was introduced in 2015
-const arrowSum = (a, b) => {
-    return a + b
-}
-
-// also like our example, if there's just a single line of code / statement
-
-// const arrowSum = (a, b) => a + b // this also works
-
-const sum = arrowSum(10, 20)
-console.log(sum)
+// console.log(myName) // this won't work
+testFx()
