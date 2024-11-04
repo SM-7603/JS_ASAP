@@ -107,30 +107,42 @@
 // console.log(var1 === var2) // doesn't convert implicitly before conversion (no strange coercion)
 // // it's better to go with the strict comparison, since there's some strange JS behavior when dealing with '', null, undefined, etc.
 
-// Conditionals
+// // Conditionals
 
-const num = 10
+// const num = 10
 
-if (num < 0) {
-    console.log(`${num} is -ve`)
-} else if (num === 0) {
-    console.log(`${num} is 0`)
-} else {
-    console.log(`${num} is +ve`)
-}
+// if (num < 0) {
+//     console.log(`${num} is -ve`)
+// } else if (num === 0) {
+//     console.log(`${num} is 0`)
+// } else {
+//     console.log(`${num} is +ve`)
+// }
 
-const color = 'red'
+// const color = 'red'
 
-switch(color) {
-    case 'red':
-        console.log('color is red')
-        break
-    case 'blue':
-        console.log('blue')
-        break
-    case 'green':
-        console.log('green')
-        break
-    default:
-        console.log('not a valid color')
+// switch(color) {
+//     case 'red':
+//         console.log('color is red')
+//         break
+//     case 'blue':
+//         console.log('blue')
+//         break
+//     case 'green':
+//         console.log('green')
+//         break
+//     default:
+//         console.log('not a valid color')
+// }
+
+// LOOPS!!!
+
+// - the 3 standard loops - for, while & do while
+// the only new thing is the for of loop!
+
+// no need for the iteration variable for tracking the items!
+const num_array = [1, 2, 3, 4, 5]
+
+for (const num of num_array) {
+    console.log(`${num}`)
 }
