@@ -42,28 +42,44 @@
 
 // II - OPERATORS:
 
-let x = 10 // assignment
-let y = 3
+// let x = 10 // assignment
+// let y = 3
 
-// also the semi colon - ; - isn't really necessary :D
-console.log(x % y) // all the basic arithmetic ones apply here
-console.log(++x) // pre increment; x = 11
-console.log(y++) // post increment; y = 3
-console.log(y) // y = 4
+// // also the semi colon - ; - isn't really necessary :D
+// console.log(x % y) // all the basic arithmetic ones apply here
+// console.log(++x) // pre increment; x = 11
+// console.log(y++) // post increment; y = 3
+// console.log(y) // y = 4
 
-console.log(x >= y) // comparison operators
+// console.log(x >= y) // comparison operators
 
-// logical operations, just and and or --> && or || 
-const isValidNumber = x > 20 || 8 > y
-console.log(isValidNumber)
+// // logical operations, just and and or --> && or || 
+// const isValidNumber = x > 20 || 8 > y
+// console.log(isValidNumber)
 
-const isValid = false
-console.log(!isValid) // negation
+// const isValid = false
+// console.log(!isValid) // negation
 
-// str operations
-console.log('Bruce ' + 'Wayne');
+// // str operations
+// console.log('Bruce ' + 'Wayne');
 
-// ternary
-// const isEven = 10 % 2 === 0 ? true : false // variant one
-const isEven = 10 % 2 === 0 ? 'Number is Even!' : 'Number is Odd!' // it doesn't have to be a boolean, it's a simple conditional!
-console.log(isEven)
+// // ternary
+// // const isEven = 10 % 2 === 0 ? true : false // variant one
+// const isEven = 10 % 2 === 0 ? 'Number is Even!' : 'Number is Odd!' // it doesn't have to be a boolean, it's a simple conditional!
+// console.log(isEven)
+
+// Type Conversions!
+
+// Implicit types
+
+// for addition, it assumes (*converts*) everything to be a string
+console.log(2 + '10')
+console.log(true + '10')
+// for -, *, % it converts it to numbers
+console.log('4' - '2')
+// but it gets weird if we do this:
+console.log('Bruce' - 'Wayne') // OUTPUT = NaN --> not a number
+// for bools & null
+console.log('5' - true) // true = 1, false = 0, and null = 0
+// finally - undefined
+console.log(5 - undefined) // NaN
