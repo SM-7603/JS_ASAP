@@ -165,5 +165,14 @@ function addNumbers(a, b) {
     return a + b
 }
 
-const sum = addNumbers(10, 20)
+// arrow functions, new syntax for functions (more concise), it was introduced in 2015
+const arrowSum = (a, b) => {
+    return a + b
+}
+
+// also like our example, if there's just a single line of code / statement
+
+// const arrowSum = (a, b) => a + b // this also works
+
+const sum = arrowSum(10, 20)
 console.log(sum)
