@@ -72,14 +72,29 @@
 
 // Implicit types
 
-// for addition, it assumes (*converts*) everything to be a string
-console.log(2 + '10')
-console.log(true + '10')
-// for -, *, % it converts it to numbers
-console.log('4' - '2')
-// but it gets weird if we do this:
-console.log('Bruce' - 'Wayne') // OUTPUT = NaN --> not a number
-// for bools & null
-console.log('5' - true) // true = 1, false = 0, and null = 0
-// finally - undefined
-console.log(5 - undefined) // NaN
+// // for addition, it assumes (*converts*) everything to be a string
+// console.log(2 + '10')
+// console.log(true + '10')
+// // for -, *, % it converts it to numbers
+// console.log('4' - '2')
+// // but it gets weird if we do this:
+// console.log('Bruce' - 'Wayne') // OUTPUT = NaN --> not a number
+// // for bools & null
+// console.log('5' - true) // true = 1, false = 0, and null = 0
+// // finally - undefined
+// console.log(5 - undefined) // NaN
+
+// Explicit types
+console.log(Number('5')) // gives 5
+console.log(Number('')) // gives 0, same for booleans, true = 1, false = 0
+
+// Then, we also have the parseInt / parseFloat, etc.
+console.log(parseFloat('3.14'))
+
+// then the 'global' string method
+console.log(String(null))
+// there's also the toString method!
+console.log((500).toString()) // note - it won't work on null & undefined
+
+// then there's the global boolean method
+console.log(Boolean('')) // null, undefined, 0, '', and NaN == false, everything else is true; but ' ' - str with a space gives true for some reason lol
