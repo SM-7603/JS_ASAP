@@ -99,10 +99,38 @@
 // // then there's the global boolean method
 // console.log(Boolean('')) // null, undefined, 0, '', and NaN == false, everything else is true; but ' ' - str with a space gives true for some reason lol
 
-// Equality
-const var1 = 10
-const var2 = '10'
+// // Equality
+// const var1 = 10
+// const var2 = '10'
 
-console.log(var1 == var2)
-console.log(var1 === var2) // doesn't convert implicitly before conversion (no strange coercion)
-// it's better to go with the strict comparison, since there's some strange JS behavior when dealing with '', null, undefined, etc.
+// console.log(var1 == var2)
+// console.log(var1 === var2) // doesn't convert implicitly before conversion (no strange coercion)
+// // it's better to go with the strict comparison, since there's some strange JS behavior when dealing with '', null, undefined, etc.
+
+// Conditionals
+
+const num = 10
+
+if (num < 0) {
+    console.log(`${num} is -ve`)
+} else if (num === 0) {
+    console.log(`${num} is 0`)
+} else {
+    console.log(`${num} is +ve`)
+}
+
+const color = 'red'
+
+switch(color) {
+    case 'red':
+        console.log('color is red')
+        break
+    case 'blue':
+        console.log('blue')
+        break
+    case 'green':
+        console.log('green')
+        break
+    default:
+        console.log('not a valid color')
+}
