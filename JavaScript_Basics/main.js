@@ -137,12 +137,33 @@
 
 // LOOPS!!!
 
-// - the 3 standard loops - for, while & do while
-// the only new thing is the for of loop!
+// // - the 3 standard loops - for, while & do while
+// // the only new thing is the for of loop!
 
-// no need for the iteration variable for tracking the items!
-const num_array = [1, 2, 3, 4, 5]
+// // no need for the iteration variable for tracking the items!
+// const num_array = [1, 2, 3, 4, 5]
 
-for (const num of num_array) {
-    console.log(`${num}`)
+// for (const num of num_array) {
+//     console.log(`${num}`)
+// }
+
+// Functions!!!
+// NOTE - the actual value that we pass to a f(x) is the argument
+// and the thing in the function definition is the parameter
+// it's always good to have that clear!
+
+function greetUser(name) {
+    console.log(`Hello ${name}!`)
 }
+
+// greetUser('Shubham')
+// greetUser('Bruce')
+// greetUser('Diana')
+// greetUser('Tony')
+
+function addNumbers(a, b) {
+    return a + b
+}
+
+const sum = addNumbers(10, 20)
+console.log(sum)
